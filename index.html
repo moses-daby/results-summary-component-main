@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      min-height: 150vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items:center ;
+      padding-bottom: 30px;
+
+    }
+     
+    
+    .first-wrapper{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 30px;
+      color: rgb(214, 205, 205);
+      margin-left: 30px;
+      border-radius: 20px;
+      width: 300px;
+      height:400px;
+      position: relative;
+      background: linear-gradient(rgb(102, 102, 247),rgb(31, 31, 227));
+      position: absolute;
+     z-index: 3;
+    }
+    .grade-wrapper{
+      width: 140px;
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+      background-color:rgb(31, 31, 227);
+      border-radius: 1000px;
+      align-items: center;
+      justify-content: center;
+    }
+    h1,h3{
+      color: #fff;
+    }
+    .great{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .great>p{
+      width: 230px;
+      margin: 10px;
+      color: rgb(214, 205, 205);
+    }
+    .second-wrapper{
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      width: 300px;
+      height: 400px;
+      background-color:hsl(0, 0%, 100%);
+      margin-left: 30px;
+      padding-top: 50px;
+      top: 350px;
+      margin-left: 30px;
+      position: relative;
+     
+      
+      
+    }
+    .div2{
+       display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      padding: 12px;
+      background-color: rgb(241, 236, 234);
+      border-radius: 10px;
+      margin: 0 20px;
+     
+    }
+    .div3{
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: rgb(247, 245, 239);
+      margin:  20px;
+    }
+    .div4{
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: rgb(240, 244, 242);
+      margin:  20px;
+    }
+    .div5{
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      padding:12px;
+      border-radius: 10px;
+      background-color: rgb(236, 239, 249);
+      margin:  20px;
+      
+    }
+    .div2-div1{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      color: blue
+      ;
+    }.p1{
+      font-size:20px;
+      color: black;
+    }
+    .gray{
+      color: rgb(189, 185, 185);
+    }
+    .Reaction{
+     color: orangered;
+    }
+    .second-wrapper>h4{
+      color: black;
+      margin: 20px;
+    }
+    .Memory{
+      color: orange;
+    }
+    .Verbal{
+      color: hsl(167, 67%, 48%);
+    }
+    .button{
+      background-color: hsl(228, 45%, 44%);
+      padding: 20px 100px;
+      display: inline-flex;
+      text-align: center;
+      text-decoration: none;
+      gap: 30px;
+      margin-left: 20px;
+      border-radius: 20px;
+      color: white;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="first-wrapper">
+    <div>
+      <p> Your Result</p>
+    </div>
+    <div class="grade-wrapper">
+      <h1>76</h1>
+      <p>of 100 </p>
+     </div>
+     <div class="great">
+       <h3>Great</h3>
+       <p> You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+  </div>
+  <div class="second-wrapper">
+    <h4> Summary</h4>
+    <div class="div2">
+      <div class="div2-div1">
+        <img src="./assets/images/icon-reaction.svg" alt="">
+        <p class="Reaction"> Reaction</p>
+      </div>
+      <div class="div2-div1">
+        <p class="p1">80</p>
+        <p class="gray">/ 100</p>
+      </div>
+    </div>
+    <div class="div3">
+      <div class="div2-div1">
+        <img src="./assets/images/icon-memory.svg" alt="">
+        <p class="Memory">Memory</p>
+      </div>
+      <div class="div2-div1">
+        <p class="p1">92</p>
+        <p class="gray">/ 100</p>
+      </div>
+    </div>
+    <div class="div4">
+      <div class="div2-div1">
+       <img src="./assets/images/icon-verbal.svg" alt="">
+       <p class=" Verbal"> Verbal</p>
+     </div>
+     <div class="div2-div1">
+       <p class="p1">61</p>
+       <p class="gray">/ 100</p>
+     </div>
+   </div>
+    <div class="div5">
+      <div class="div2-div1">
+        <img src="./assets/images/icon-visual.svg" alt="">
+        <p class="Visual">Visual</p>
+      </div>
+      <div class="div2-div1">
+        <p class="p1">72</p>
+        <p class="gray">/ 100</p>
+      </div>
+    </div>
+    <a href="#" class="button">Continue</a>
+  </div>
+</main> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.Github.com//moses-daby" target="_blank">Dabytech</a>
+  </div>
+</body>
+</html>
